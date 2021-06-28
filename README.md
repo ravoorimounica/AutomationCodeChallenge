@@ -22,3 +22,15 @@ Feature: Automate
 Scenario: Add a user and validate the user has been added to the table
 
 Scenario: Delete user User Name: novak and validate user has been deleted
+
+---
+Install:
+    npm install cucumber-html-reporter,
+    npm install protractor-cucumber-framework,
+
+pre-requisits:
+Need to run the selenium server by using below script
+npm run webdriver start
+
+Run commands from script:
+npm run protractorcuke --> To run the Automation script and to seee the results

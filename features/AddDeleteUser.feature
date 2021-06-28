@@ -1,5 +1,8 @@
  
-Feature: WebTable Add, Delete Actions and App Validations
+Feature: To Automate WebTable Add, Delete Actions and App Validations
+     As an Engr. Candidate
+     I need to automate http://www.way2automation.com/angularjs-protractor/webtables/
+     So I can show my automation capabilities
 
 Background:
 Given Launch the application "http://www.way2automation.com/angularjs-protractor/webtables/"
@@ -18,4 +21,3 @@ When User looks for user Name and select remove user icon for "Novak"
 When confirmation dialog pops up
 Then select ok
 Then user should be removed from the table for "Novak"
-And just wait 

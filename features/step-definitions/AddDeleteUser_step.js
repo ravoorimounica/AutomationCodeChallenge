@@ -72,11 +72,13 @@ When(/^User looks for user Name and select remove user icon for "([^"]*)"$/, { t
         console.log('the name list is ', temp);
         if (temp === userName) {
              browser.sleep(5600);
-            return removeUserIcon.get(2).click();
+            removeUserIcon.get(i).click();
+            removeUserIcon.get(i).click();
         }
          browser.sleep(5600);
+         return removeUserIcon.get(2).click();
     }
-    return removeUserIcon.get(2).click();
+    // return removeUserIcon.get(2).click();
 
 });
 
@@ -110,6 +112,3 @@ Then(/^user should be removed from the table for "([^"]*)"$/, { timeout: 2 * 700
      browser.sleep(5500);
 });
 
-When(/^just wait$/, { timeout: 2 * 7000 }, function () {
-    return browser.sleep(7500);
-});
