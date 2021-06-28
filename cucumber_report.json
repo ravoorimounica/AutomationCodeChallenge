@@ -1,77 +1,77 @@
 [
   {
-    "description": "",
+    "description": "     As an Engr. Candidate\n     I need to automate http://www.way2automation.com/angularjs-protractor/webtables/\n     So I can show my automation capabilities",
     "elements": [
       {
         "description": "",
-        "id": "webtable-add,-delete-actions-and-app-validations;add-a-user-and-validate-the-user-has-been-added-to-the-table",
+        "id": "to-automate-webtable-add,-delete-actions-and-app-validations;add-a-user-and-validate-the-user-has-been-added-to-the-table",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 11,
         "name": "Add a user and validate the user has been added to the table",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 8,
             "name": "Launch the application \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
             "match": {
               "location": "features\\step-definitions\\AddDeleteUser_step.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 2283000000
+              "duration": 2108000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 9,
             "name": "User validates the title",
             "match": {
               "location": "features\\step-definitions\\AddDeleteUser_step.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 105000000
+              "duration": 95000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
+            "line": 13,
             "name": "User selects Add user button and validates the Modal header",
             "match": {
               "location": "features\\step-definitions\\AddDeleteUser_step.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 679000000
+              "duration": 495000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 11,
+            "line": 14,
             "name": "User fills in the details, hit Save and validates modal is closed",
             "match": {
-              "location": "features\\step-definitions\\AddDeleteUser_step.js:27"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:26"
             },
             "result": {
               "status": "passed",
-              "duration": 3916000000
+              "duration": 2692000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 15,
             "name": "user details should be added to table",
             "match": {
-              "location": "features\\step-definitions\\AddDeleteUser_step.js:45"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 2826000000
+              "duration": 2770000000
             }
           },
           {
@@ -79,7 +79,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 27000000
             }
           }
         ],
@@ -88,71 +88,71 @@
       },
       {
         "description": "",
-        "id": "webtable-add,-delete-actions-and-app-validations;delete-user-user-name:-novak-and-validate-user-has-been-deleted",
+        "id": "to-automate-webtable-add,-delete-actions-and-app-validations;delete-user-user-name:-novak-and-validate-user-has-been-deleted",
         "keyword": "Scenario",
-        "line": 15,
+        "line": 18,
         "name": "Delete user User Name: novak and validate user has been deleted",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 8,
             "name": "Launch the application \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
             "match": {
               "location": "features\\step-definitions\\AddDeleteUser_step.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 921000000
+              "duration": 629000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 9,
             "name": "User validates the title",
             "match": {
               "location": "features\\step-definitions\\AddDeleteUser_step.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 65000000
+              "duration": 88000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 17,
+            "line": 20,
             "name": "User looks for user Name and select remove user icon for \"Novak\"",
             "match": {
-              "location": "features\\step-definitions\\AddDeleteUser_step.js:56"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 2000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
+            "line": 21,
             "name": "confirmation dialog pops up",
             "match": {
-              "location": "features\\step-definitions\\AddDeleteUser_step.js:86"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:74"
             },
             "result": {
               "status": "failed",
-              "duration": 3073000000,
-              "error_message": "NoSuchElementError: No element found using locator: By(css selector, h3[class='ng-binding'])\n    at C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as getAttribute] (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as getAttribute] (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:831:22)\n    at World.<anonymous> (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\features\\step-definitions\\AddDeleteUser_step.js:89:24)"
+              "duration": 3068000000,
+              "error_message": "NoSuchElementError: No element found using locator: By(css selector, h3[class='ng-binding'])\n    at C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:814:27\n    at ManagedPromise.invokeCallback_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as getAttribute] (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as getAttribute] (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\node_modules\\protractor\\built\\element.js:831:22)\n    at World.<anonymous> (C:\\Users\\jcnt633\\Cypress\\AutomationCodeChallenge\\features\\step-definitions\\AddDeleteUser_step.js:77:24)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 22,
             "name": "select ok",
             "match": {
-              "location": "features\\step-definitions\\AddDeleteUser_step.js:96"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:83"
             },
             "result": {
               "status": "skipped",
@@ -162,10 +162,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 23,
             "name": "user should be removed from the table for \"Novak\"",
             "match": {
-              "location": "features\\step-definitions\\AddDeleteUser_step.js:103"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:89"
             },
             "result": {
               "status": "skipped",
@@ -177,7 +177,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 20000000
             }
           }
         ],
@@ -185,10 +185,10 @@
         "type": "scenario"
       }
     ],
-    "id": "webtable-add,-delete-actions-and-app-validations",
+    "id": "to-automate-webtable-add,-delete-actions-and-app-validations",
     "line": 2,
     "keyword": "Feature",
-    "name": "WebTable Add, Delete Actions and App Validations",
+    "name": "To Automate WebTable Add, Delete Actions and App Validations",
     "tags": [],
     "uri": "features\\AddDeleteUser.feature"
   }

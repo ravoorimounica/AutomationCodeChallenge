@@ -19,7 +19,6 @@ When(/^User selects Add user button and validates the Modal header$/, { timeout:
     element(by.css("button[type='add']")).click();
     var modalHeader = element(by.css("h3[class='ng-binding']"));
     return modalHeader.getAttribute('innerText').then(text => {
-        // console.log('The Modal header text is ', text);
         return expect(text).to.equal('Add User');
     });
 });
@@ -37,7 +36,6 @@ When(/^User fills in the details, hit Save and validates modal is closed$/, { ti
     element(by.css("button[class='btn btn-success']")).click();
     var isModalClosed = element(by.css("div[class='modal ng-scope']"));
     return isModalClosed.isPresent().then(bool => {
-        // console.log('Is the Modal diaplayed? - ', bool);
         return expect(bool).to.be.false;
     });
 });
@@ -48,7 +46,6 @@ Then(/^user details should be added to table$/, { timeout: 2 * 3000 }, function 
     browser.sleep(1500);
     var rowcount = element.all(by.className('smart-table-data-row ng-scope'))
     return rowcount.count().then(value => {
-        // console.log('the search result row count is ', value);
         return expect(value).to.equal(1);
     });
 });
@@ -60,48 +57,36 @@ When(/^User looks for user Name and select remove user icon for "([^"]*)"$/, { t
     var userNamelist = $$('tbody > tr > td:nth-child(3)');
     var removeUserIcon = element.all(by.css("i[class='icon icon-remove']"))
     var userNamesCount = userNamelist.count().then(value => {
-        console.log('the username count is ', value);
         return value;
     });
-    console.log("before loop)")
     for (var i = 0; i < userNamesCount; i++) {
         console.log('I entered for loop');
-        var temp = userNamelist.getAttribute('innerText').get(i).then(function(text)  {
+        var temp = userNamelist.getText().get(i).then(text => {
             return text;
         });
-        console.log('the name list is ', temp);
         if (temp === userName) {
-             browser.sleep(5600);
-            removeUserIcon.get(i).click();
             removeUserIcon.get(i).click();
         }
-         browser.sleep(5600);
-         return removeUserIcon.get(2).click();
     }
-    // return removeUserIcon.get(2).click();
-
+    return removeUserIcon.get(2).click();
 });
-
 
 When(/^confirmation dialog pops up$/, { timeout: 2 * 7000 }, function () {
     browser.sleep(3000);
     var modalHeader = element(by.css("h3[class='ng-binding']"));
     return modalHeader.getAttribute('innerText').then(text => {
-        console.log('The Modal header text is ', text);
         return expect(text).to.equal('Confirmation Dialog');
     });
 
 });
 
 Then(/^select ok$/, { timeout: 2 * 2000 }, function () {
-    browser.sleep(2500);
     element(by.css("h3[class='ng-binding']")).click();
     return element(by.css("button[class='btn ng-scope ng-binding btn-primary']")).click();
 });
 
 
 Then(/^user should be removed from the table for "([^"]*)"$/, { timeout: 2 * 7000 }, function (userName) {
-    browser.sleep(1500);
     element(by.css("input[type='text']")).click();
     element(by.css("input[type='text']")).sendKeys(userName);
     var rowcount = element.all(by.className('smart-table-data-row ng-scope'))
@@ -109,6 +94,5 @@ Then(/^user should be removed from the table for "([^"]*)"$/, { timeout: 2 * 700
         console.log('the search result row count is ', value);
         return expect(value).to.equal(0);
     });
-     browser.sleep(5500);
 });
 
