@@ -33,4 +33,4 @@ Need to run the selenium server by using below script
 npm run webdriver start
 
 Run commands from script:
-npm run protractorcuke --> To run the Automation script and to seee the results
+npm run protractorcuke --> To run the Automation script and to seee the results 
