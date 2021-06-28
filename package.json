@@ -1,0 +1,31 @@
+{
+  "name": "protractorcucumberjavascript",
+  "version": "1.0.0",
+  "description": "Instructions:",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^7.0.0-rc.0",
+    "protractor": "^7.0.0"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "protractor-cucumber-framework": "^8.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cuke": ".\\node_modules\\.bin\\cucumber-js --format=json:cucumber_report.json && node index.js",
+    "protractorcuke": "protractor protractor.conf.js && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bobra-FINEOS/AutomationCodeChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bobra-FINEOS/AutomationCodeChallenge/issues"
+  },
+  "homepage": "https://github.com/Bobra-FINEOS/AutomationCodeChallenge#readme"
+}
