@@ -6,15 +6,17 @@ exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     capabilities: {
-        "browserName": 'chrome'
+        "browserName": 'chrome',
+        chromeOptions: { args: ['start-maximized']}
     },
-    specs: ['features/*.feature'],
+    specs: ['features/AddDeleteUser.feature',
+],
 
     cucumberOpts: {
         // require step definitions
         format: 'json:cucumber_report.json',
         require: [
-          'features/step-definitions/User_step.js' // accepts a glob
+          'features/step-definitions/AddDeleteUser_step.js',
         ]
       }
   };

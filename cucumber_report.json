@@ -4,74 +4,74 @@
     "elements": [
       {
         "description": "",
-        "id": "webtable-actions-and-validations;add-a-user-and-validate-the-user-has-been-added-to-the-table",
+        "id": "webtable-add,-delete-actions-and-app-validations;add-a-user-and-validate-the-user-has-been-added-to-the-table",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 8,
         "name": "Add a user and validate the user has been added to the table",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "Launch the application \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
             "match": {
-              "location": "features\\step-definitions\\User_step.js:9"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 1753000000
+              "duration": 1576000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
+            "keyword": "When ",
+            "line": 6,
             "name": "User validates the title",
             "match": {
-              "location": "features\\step-definitions\\User_step.js:13"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 141000000
+              "duration": 196000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
+            "line": 10,
             "name": "User selects Add user button and validates the Modal header",
             "match": {
-              "location": "features\\step-definitions\\User_step.js:18"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 575000000
+              "duration": 817000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 9,
+            "keyword": "And ",
+            "line": 11,
             "name": "User fills in the details, hit Save and validates modal is closed",
             "match": {
-              "location": "features\\step-definitions\\User_step.js:27"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2329000000
+              "duration": 2059000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 12,
             "name": "user details should be added to table",
             "match": {
-              "location": "features\\step-definitions\\User_step.js:45"
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 2746000000
+              "duration": 2735000000
             }
           },
           {
@@ -79,7 +79,117 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 27000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "webtable-add,-delete-actions-and-app-validations;delete-user-user-name:-novak-and-validate-user-has-been-deleted",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Delete user User Name: novak and validate user has been deleted",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Launch the application \"http://www.way2automation.com/angularjs-protractor/webtables/\"",
+            "match": {
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 907000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User validates the title",
+            "match": {
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User looks for user Name and select remove user icon for \"Novak\"",
+            "match": {
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8806000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "confirmation dialog pops up",
+            "match": {
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3105000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "select ok",
+            "match": {
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2728000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should be removed from the table for \"Novak\"",
+            "match": {
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "just wait",
+            "match": {
+              "location": "features\\step-definitions\\AddDeleteUser_step.js:113"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7502000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14000000
             }
           }
         ],
@@ -87,11 +197,11 @@
         "type": "scenario"
       }
     ],
-    "id": "webtable-actions-and-validations",
+    "id": "webtable-add,-delete-actions-and-app-validations",
     "line": 2,
     "keyword": "Feature",
-    "name": "WebTable Actions and Validations",
+    "name": "WebTable Add, Delete Actions and App Validations",
     "tags": [],
-    "uri": "features\\User.feature"
+    "uri": "features\\AddDeleteUser.feature"
   }
 ]
